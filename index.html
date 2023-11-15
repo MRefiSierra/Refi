@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylw.css">
+</head>
+<style>
+    body{
+        background-color: #2a2139;
+    }
+    .cat{
+        transition: ease-in 0.2s;
+        cursor:pointer;
+    }
+    .cat:hover{
+        transform: translateY(-5px);
+    }
+    .cat{
+        background-color: #463465;
+    }
+</style>
+
+<body>
+    <div class="container-xl">
+        <nav class="navbar navbar-expand-lg navbar-dark blud fixed-top">
+            <div class="container-xl">
+                <a class="navbar-brand" href="navbar.html">
+                    <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="60" height="48">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-around mx-auto" id="navbarSupportedContent">
+                    <form class="d-flex col-11" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-cart-plus"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
+                        <path
+                            d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                      </svg>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section style="background-color: #2a2139;">
+        <div class="container-xxl" style="background-color: white;">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <div class="img1">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center ct">
+                            <div class="div text-center">
+                                <p class="card-text text-light fs-1 fw-bold">NEED GAMING GEAR?</p>
+                                <p class="card-text text-light fs-1 fw-bold">YOU VISITED A VERY TRUE MARKETPLACE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img2"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img3"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+            </div>
+        </div>
+    </div>
+    <!-- pc view -->
+    <div style="background-color: #463465;" class="container-xl d-sm-none pt-2 d-none rounded-bottom-1 d-md-block d-lg-block d-xl-block d-xxl-block text-light">
+        <div class="row gap-4 justify-content-center">
+            <div class="cat pt-4 col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 text-center">
+                <img class="p-1 rounded-4 border border-secondary" src="img/cpu.png" alt="" width="50px">
+                <p>CPUs</p>
+            </div>
+            <div class="cat pt-4 col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 text-center">
+                <img class="p-1 rounded-4 border border-secondary" src="img/vga-card.png" alt="" width="50px">
+                <p>VGA Card</p>
+            </div>
+            <div class="cat pt-4 col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 text-center">
+                <img class="p-1 rounded-4 border border-secondary" src="img/storage.png" alt="" width="50px">
+                <p>Storage</p>
+            </div>
+            <div class="cat pt-4 col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 text-center">
+                <img class="p-1 rounded-4 border border-secondary" src="img/ram-memory.png" alt="" width="50px">
+                <p>RAM</p>
+            </div>
+            <div class="cat pt-4 col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 text-center">
+                <img class="p-1 rounded-4 border border-secondary" src="img/psu.png" alt="" width="50px">
+                <p>PSU</p>
+            </div>
+            <div class="cat pt-4 col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 text-center">
+                <img class="p-1 rounded-4 border border-secondary" src="img/sound.png" alt="" width="50px">
+                <p>Sound</p>
+            </div>
+            <div class="cat pt-4 col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 text-center">
+                <img class="p-1 rounded-4 border border-secondary" src="img/monitor.png" alt="" width="50px">
+                <p>Monitor</p>
+            </div>
+            <div class="cat pt-4 col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 text-center">
+                <img class="p-1 rounded-4 border border-secondary" src="img/keyboard.png" alt="" width="50px">
+                <p>Keyboard</p>
+            </div>
+            <div class="cat pt-4 col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 text-center">
+                <img class="p-1 rounded-4 border border-secondary" src="img/computer-case.png" alt="" width="50px">
+                <p>Case</p>
+            </div>
+            <div class="cat pt-4 col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 text-center">
+                <img class="p-1 rounded-4 border border-secondary" src="img/mouse.png" alt="" width="50px">
+                <p>Mouse</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- pc view end -->
+    <!-- phone view -->
+    <div class="container-xl pt-5 d-block d-sm-none">
+        <div class="row flex-nowrap overflow-x-auto flex-shrink-1">
+            <div class=" col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 w-50 text-center flex-shrink-1">
+                <img src="img/cpu.png" alt="" width="50px">
+                <p>CPUs</p>
+            </div>
+            <div class="col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 w-50 text-center flex-shrink-1">
+                <img src="img/vga-card.png" alt="" width="50px">
+                <p>VGA Card</p>
+            </div>
+            <div class="col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 w-50 text-center flex-shrink-1">
+                <img src="img/storage.png" alt="" width="50px">
+                <p>Storage</p>
+            </div>
+            <div class="col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 w-50 text-center flex-shrink-1">
+                <img src="img/ram-memory.png" alt="" width="50px">
+                <p>RAM</p>
+            </div>
+            <div class="col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 w-50 text-center flex-shrink-1">
+                <img src="img/psu.png" alt="" width="50px">
+                <p>PSU</p>
+            </div>
+            <div class="col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 w-50 text-center flex-shrink-1">
+                <img src="img/sound.png" alt="" width="50px">
+                <p>Sound</p>
+            </div>
+            <div class="col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 w-50 text-center flex-shrink-1">
+                <img src="img/monitor.png" alt="" width="50px">
+                <p>Monitor</p>
+            </div>
+            <div class="col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 w-50 text-center flex-shrink-1">
+                <img src="img/keyboard.png" alt="" width="50px">
+                <p>Keyboard</p>
+            </div>
+            <div class="col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 w-50 text-center flex-shrink-1">
+                <img src="img/computer-case.png" alt="" width="50px">
+                <p>Computer Case</p>
+            </div>
+            <div class="col-xl-2 col-xxl-1 col-lg-2 col-md-3 col-sm-12 col-xs-6 w-50 text-center flex-shrink-1">
+                <img src="img/mouse.png" alt="" width="50px">
+                <p>Mouse</p>
+            </div>
+        </div>
+    </div>
+    <!-- phone view end -->
+    <section class="text-light pt-5">
+        <div class="container-xl p-3" style="background-color: #463465;">
+            <h3 class="" style="border-bottom: 3px solid  #f92aad;">Recommendation</h3>
+            <div class="catalog pt-2 d-flex gap-3">
+                <div class="card border-0 rounded-0" style="width: 16rem; height: 500px;">
+                    <img src="img/id-11134207-7qul9-ljn6zu641g0302.jpg" class="card-img-top rounded-0" alt="...">
+                    <div class="card-body text-light" style="background-color: #382C4D;">
+                      <h5 class="card-title">ASUS ROG Strix GeForce RTX 4090 OC Edition | 24GB GDDR6X</h5>
+                      <p class="card-text">The NVIDIA® GeForce RTX™ 4090 is the ultimate GeForce GPU</p>   
+                      <h5 class="card-title">Rp26.000.000,00</h5>
+                    </div>
+                  </div>    
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="y.js">
+    </script>
+</body>
+
+
+</html>
